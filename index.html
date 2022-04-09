@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-T5K9FRYEYV');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Escultura Virtual</title>
+    <title>Unity WebGL Player | EsculturaVirtual</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!--div class="info"><p></br></br></br>Ponte unos audífonos</br>Usa la tecla F para volar</br>Controla la dirección con las teclas de flecha y el puntero del mouse</p></div>-->
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -19,7 +28,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Telemachina</div>
+        <div id="unity-build-title">EsculturaVirtual</div>
       </div>
     </div>
     <script>
@@ -30,9 +39,9 @@
         frameworkUrl: buildUrl + "/telemachina.framework.js",
         codeUrl: buildUrl + "/telemachina.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Escultura Virtual",
-        productVersion: "0.1",
+        companyName: "ricardoduennas@gmail.com",
+        productName: "EsculturaVirtual",
+        productVersion: "1.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -45,8 +54,8 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
       loadingBar.style.display = "block";
 
