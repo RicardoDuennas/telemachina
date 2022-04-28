@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+
+        <div class="full-height" onclick="remove(this)"> <pre>
+                   Este es nuestro universo, 
+         sonidos que nos transportan 
+              a realidades alternas, 
+
+       imágenes que nos cuentan historias 
+           de un mundo paralelo. 
+
+         Somos Telemachina... 
+             lo mejor 
+                 está por decubrirse.</pre>
+
+    <div class="full-inner"> <pre>
+              Navega con las flechas, vuela con F. Pasa al siguiente nivel haciendo clic.</pre></div>
+    <div class="full-inner-green"> <pre>
+              Haz clic para iniciar.</pre></div>
+   </div>
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -65,6 +84,13 @@
         });
       };
       document.body.appendChild(script);
+    </script>
+
+        <script> 
+function remove(el) {
+  var element = el;
+  element.remove();
+}
     </script>
   </body>
 </html>
